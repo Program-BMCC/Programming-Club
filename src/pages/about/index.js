@@ -1,7 +1,5 @@
-import React from 'react'
+import { CurrentlyUnderConstruction } from '@components/Notice'
 
-const About = () => {
-  return <div>About</div>
-}
+const About = () => <CurrentlyUnderConstruction title='About' />
 
 export default About
