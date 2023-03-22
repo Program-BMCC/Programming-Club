@@ -49,8 +49,24 @@ const nextConfig = {
       },
     ]
   },
-
   reactStrictMode: true,
+  swcMinify: true,
+  async rewrites() {
+    return [
+      {
+        source: '/BankOfAtlantis',
+        destination: '/html/BankOfAtlantis.html'
+      },
+      {
+        source: '/ReadFreeComics',
+        destination: '/html/ReadFreeComics.html'
+      },
+      {
+        source: '/BankOfAtlantisTransfer',
+        destination: '/html/BankOfAtlantisTransfer.html'
+      }
+    ]
+  },
   images: {
     domains: ['res.cloudinary.com', 'images.unsplash.com'],
   },
